@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/order-summary-page-using-bootstrap-and-flexbox-btVBOiwaq)
 - Live Site URL: [Frontend Mentor | Order summary card](https://alishayb.github.io/order-summary-card/)
 
 ## My process
