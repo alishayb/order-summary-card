@@ -6,6 +6,7 @@ body {
     color: hsl(224, 23%, 55%);
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 p, .btn {
@@ -17,9 +18,14 @@ p, .btn {
     font-size: 0.75em;
 }
 
+.link-change:active, .link-change:hover{
+    color: #766CF1;
+}
+
 .order-box {
     width: 50%;
     margin: 0 auto;
+    border: 0px solid white;
     border-radius: 15px;
     text-align: center;
 }
@@ -40,11 +46,13 @@ h5, .plan-detail-title {
 .payment {
     background-color: hsl(245, 75%, 52%);
     color: white;
+    box-shadow: 0px 15px 15px -15px hsl(245, 75%, 52%);
 }
 
-.payment:hover {
+.payment:hover, .payment:active{
     color: white;
-    box-shadow: 0px 15px 15px -14px hsl(245, 75%, 52%);
+    background-color: #766CF1;
+    box-shadow: 0px 15px 15px -15px #766CF1;
 }
 
 .cancel {
@@ -55,8 +63,17 @@ h5, .plan-detail-title {
     width: 12%;
 }
 
+.plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .plan-detail {
     padding: 0 4em 0 1em;
+    text-align: start;
 }
 
 .attribution {
@@ -64,8 +81,22 @@ h5, .plan-detail-title {
     font-size: 0.8em;
 }
 
-@media (max-width: 800px){
+@media (min-width: 376px) and (max-width: 640px){
     .plan {
-        display: auto;
+        display: block;
+    }
+    .plan-detail {
+        padding: 0;
+        text-align: center;
+    }
+    .icon-music {
+        width: 25%;
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 376px) {
+    .order-box {
+        width: 90%;
     }
 }
