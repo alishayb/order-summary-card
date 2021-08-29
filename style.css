@@ -1,0 +1,71 @@
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("images/pattern-background-desktop-crop.svg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    color: hsl(224, 23%, 55%);
+    justify-content: center;
+    align-items: center;
+}
+
+p, .btn {
+    font-size: smaller;
+}
+
+.link-change {
+    color: hsl(245, 75%, 52%);
+    font-size: 0.75em;
+}
+
+.order-box {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h5, .plan-detail-title {
+    color: hsl(223, 47%, 23%)
+}
+
+.btn {
+    width: 85%;
+    border-radius: 5px;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+}
+
+.payment:hover {
+    color: white;
+    box-shadow: 0px 15px 15px -14px hsl(245, 75%, 52%);
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+}
+
+.icon-music {
+    width: 12%;
+}
+
+.plan-detail {
+    padding: 0 4em 0 1em;
+}
+
+.attribution {
+    width: fit-content;
+    font-size: 0.8em;
+}
+
+@media (max-width: 800px){
+    .plan {
+        display: auto;
+    }
+}

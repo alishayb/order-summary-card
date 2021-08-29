@@ -3,35 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-row">
+  <div class="primary-container">
+  <div class="order-box card">
+    <img src="images/illustration-hero.svg" class="card-img-top" alt="...">
+
+    <div class="card-body shadow-lg">
+    <h5 class="card-title fw-bold mt-4">Order Summary </h5> 
+    
+    <p class="card-text mx-4 mt-3 mb-4">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      
+    <div class="plan d-flex flex-row justify-content-center align-items-center flex-wrap mx-4">
+        <img src="images/icon-music.svg" class="icon-music">
+        <div class="plan-detail text-start">
+          <p class="mb-0 fw-bold plan-detail-title"> Annual Plan</p>
+          <p class="mb-0"> $59.99/year </p>
+        </div>
+        <a href="#" class="fw-bold link-change">Change</a>
+    </div>
+      
+    <button type="button" class="btn payment mt-4 btn-sm p-2 fw-bold"> Proceed to Payment </button>
+
+    <button type="button" class="btn cancel my-3 btn-sm fw-bold"> Cancel Order </button>
+    </div>
+
+  </div>
+  
+  <div class="attribution mx-auto mt-4 mb-0">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="link-primary">Frontend Mentor</a>. 
+    Coded by <a href="#" class="link-primary"> alisha yb</a>.
+  </div>
   </div>
 </body>
 </html>
